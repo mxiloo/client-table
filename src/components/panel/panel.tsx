@@ -12,7 +12,6 @@ function Panel({ clientData }: any) {
   const clientTerms = clientData?.payment_terms ?? [];
 
   const [active, setActive] = useState<"offers" | "terms">("offers");
-
   const [columnFilters, setColumnFilters] = useState([]);
 
   const click = useCallback((value: "offers" | "terms") => {
@@ -27,26 +26,28 @@ function Panel({ clientData }: any) {
   const columns = useMemo<ColumnDef<TOffers>[]>(() => [
     { header: "", accessorKey: "status" },
     {
-      id: "orderTitle",  // уникальный id колонки
-      header: "Title",
-      accessorFn: row => row.order?.title ?? "",
+      id: active === 'offers' ? "orderTitle" : "termsTitle",  // уникальный id колонки
+      header: active === "offers" ? "Title" : "Payment method" ,
+      accessorFn: row => active === "offers" ? row.order?.title ?? "" : row.payment_method?.title ?? "",
       cell: (info) => {
         const order =  info?.row?.original?.order;
+        const terms = info?.row?.original?.payment_method;
+
         return (
           <div className={styles.firstCell}>
             <span className={styles.titleCell}>
-              {order?.title}
+              {active === 'offers' ? order?.title : terms?.title}
             </span>
             <span className={styles.orderId}>
-              ID {order?.id}
+              ID {active ==="offers" ? order?.id : terms?.id}
             </span>
           </div>
         );
       },
     },
-    { header: "Sources", accessorKey: "sources" },
-    { header: "Spend", accessorKey: "spend" },
-    { header: "Profit", accessorKey: "profit" },
+    { header: active === "offers" ? "Sources" : "Exchange extras", accessorKey: active === "offers" ? "sources" : "exchange_extras" },
+    { header: active === "offers" ? "Spend" : "VAT" , accessorKey: active === "offers" ? "spend" : "vat" },
+    { header: active === "offers" ? "Profit" : "Start date" , accessorKey: active === "offers" ? "profit" : "start_date" },
     {
       header: "Actions",
       accessorKey: "actions",
@@ -61,7 +62,7 @@ function Panel({ clientData }: any) {
   ], [active]);
 
   const table = useReactTable({
-    data: clientOffers,
+    data: active === "offers" ? clientOffers : clientTerms,
     state:{
       columnFilters
     },
@@ -70,11 +71,13 @@ function Panel({ clientData }: any) {
     getCoreRowModel: getCoreRowModel(),
   });
 
+ 
+
   return (
     <section className={styles.panel}>
       <Info />
       <Switcher status={active} click={click} />
-      <DataPanel table={table} title={title} buttonTitle={buttonTitle} columnFilters={columnFilters} setColumnFilters={setColumnFilters}/>
+      <DataPanel table={table} title={title} buttonTitle={buttonTitle} columnFilters={columnFilters} setColumnFilters={setColumnFilters} active={active}/>
     </section>
   );
 }

@@ -3,14 +3,10 @@ import Table from '../table/table';
 import styles from './data-panel.module.scss';
 
 
+function DataPanel({ title, buttonTitle, table, columnFilters, setColumnFilters, active }: any) {
 
-
-function DataPanel({ title, buttonTitle, table, columnFilters, setColumnFilters }: any) {
     const [open, setOpen] = useState<boolean>(false);
-    console.log(open)
-    const findRowByTitle = columnFilters.find(f => f.id === "orderTitle")?.value || "";
-
-    const findRowByStatus = columnFilters.find(f => f.id === "status")?.value || "";
+    const findRowByTitle = columnFilters.find(f => f.id === (active === "offers" ? "orderTitle" : "termsTitle"))?.value || "";
   
     const onFilterChange = (id: string, value: string) => {
       setColumnFilters(prev => {
@@ -25,7 +21,7 @@ function DataPanel({ title, buttonTitle, table, columnFilters, setColumnFilters 
     const onClose = (value: string) => {
         setOpen(false);
         onFilterChange("status", value)
-    }
+    };
 
     return (
       <section className={styles.dataPanel}>
@@ -42,7 +38,7 @@ function DataPanel({ title, buttonTitle, table, columnFilters, setColumnFilters 
                 type="text"
                 placeholder={`Search ${title.toLowerCase()}`}
                 value={findRowByTitle}
-                onChange={(e) => onFilterChange("orderTitle", e.target.value)}
+                onChange={(e) => onFilterChange(active === "offers" ? "orderTitle" : "termsTitle", e.target.value)}
               />
               <div className={styles.container}>
                 <div className={styles.dropdown} onClick={() => setOpen(!open)}>
