@@ -1,0 +1,48 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+    height: 50px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.cell {
+    display: flex;
+    flex: 1;
+    max-width: 256px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.firstCell {
+    display: flex;
+    flex: 1;
+    max-width: 47px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.active {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #68DB3B;
+}
+
+.disabled {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #717378;
+}

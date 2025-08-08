@@ -1,0 +1,70 @@
+.tableWrapper {
+
+    max-width: 1600px;
+    margin: auto;
+    box-shadow: 0px 0px 43px 0px #A39FC112;
+    border-radius: 16px;
+  }
+  
+  .header {
+    background: #FAFCFF;
+    font-weight: bold;
+    border-bottom: 1px solid #E7E7ED;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    height: 50px;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.cell {
+    display: flex;
+    flex: 1;
+    max-width: 256px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.firstCell {
+    max-width: 47px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+  
+  .managerCell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .expanded {
+    overflow: hidden;
+  }
+
+
+
+
+  

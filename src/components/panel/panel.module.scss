@@ -1,0 +1,31 @@
+.panel {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: #F3F5FA;
+    margin: 10px 15px;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    max-height: 616px;
+}
+
+.firstCell {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titleCell {
+    font-size: 12px;
+    line-height: 100%;
+    color: #333333;
+    font-weight: 500;
+}
+
+.orderId {
+    font-size: 10px;
+    line-height: 100%;
+    color: #333333;
+    font-weight: 400;
+}

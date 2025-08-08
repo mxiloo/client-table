@@ -1,0 +1,102 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 360px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.line {
+    border: 1px solid #E7E7E7;
+    width: 100%;
+}
+
+.list {
+    list-style: none
+}
+
+.titleMain {
+    color: #2A32ED;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.textInfo {
+    color: #323130;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.textStatus {
+    color: #68DB3B;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 500;
+    color: #454545;
+}
+
+.title {
+    padding: 10px 0 18px 0;
+}
+
+.h3 {
+    color: #454545;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.total {
+    color: #ED2A2A;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9px
+}
+
+.archive, .edit {
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 500;
+    border: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.archive {
+    background-color: #C1C3C8;
+    padding: 12px 23px;
+    color: #FFFFFF;
+    
+}
+
+.edit {
+    background-color: #CDD5E8;
+    padding: 12px 23px;
+    color: #8291B5;
+   
+}

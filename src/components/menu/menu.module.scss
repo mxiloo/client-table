@@ -1,0 +1,45 @@
+.container {
+  border: 1px solid #CDD5E8;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.eye {
+    background-image: url('../../images/eye.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 12px;
+    cursor: pointer;
+    background-color: inherit;
+    border: 0;
+    padding: 0;
+  }
+
+  .edit {
+    background-image: url('../../images/edit.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: inherit;
+    border: 0;
+    padding: 0;
+  }
+
+  .trash {
+    background-image: url('../../images/trash.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: inherit;
+    border: 0;
+    padding: 0;
+  }

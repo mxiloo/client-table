@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arrow, .home {
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.active {
+    color: #2A32ED;
+}
+
+.disabled {
+    color: #C1C3C8
+}

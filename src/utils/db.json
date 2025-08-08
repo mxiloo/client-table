@@ -1,0 +1,262 @@
+{
+    "clients": [
+      {
+        "id": "1",
+        "status": "active",
+        "name": "Test",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "manager": "Sergei",
+        "offers": [
+        {
+          "order":
+            {
+              "title": "test",
+              "id": "34574536"
+            },
+          "sources": "6",
+          "spend": "$234 456.78",
+          "profit": "$24 143.78",
+          "status": "active"
+        },
+        {
+          "order":
+            {
+              "title": "Primary Text",
+              "id": "34574536"
+            },
+          "id": "34574536",
+          "sources": "3",
+          "spend": "$234 456.78",
+          "profit": "$24 143.78",
+          "status": "active"
+        },
+        {
+          "order":
+            {
+              "title": "Primary Text",
+              "id": "34574536"
+            },
+          "id": "34574536",
+          "sources": "1",
+          "spend": "$234 456.78",
+          "profit": "$24 143.78",
+          "status": "active"
+        },
+        {
+          "order":
+            {
+              "title": "Primary Text",
+              "id": "34574536"
+            },
+          "id": "34574536",
+          "sources": "2",
+          "spend": "$234 456.78",
+          "profit": "$24 143.78",
+          "status": "disabled"
+        }
+      ],
+      "payment_terms": [
+        {
+          "payment_method": {
+            "title": "AdSkill LTD | Hong Kong",
+            "id": "34574536"
+          },
+          "exchange_extras": "0.00%",
+          "vat": "20%",
+          "start_date": "14.03.2025",
+          "status": "active"
+        },
+        {
+          "payment_method": {
+            "title": "AdSkill LTD | Hong Kong",
+            "id": "34574536"
+          },
+          "exchange_extras": "0.00%",
+          "vat": "20%",
+          "start_date": "14.03.2025",
+          "status": "disabled "
+        },{
+          "payment_method": {
+            "title": "AdSkill LTD | Hong Kong",
+            "id": "34574536"
+          },
+          "exchange_extras": "0.00%",
+          "vat": "20%",
+          "start_date": "14.03.2025",
+          "status": "disabled"
+        }
+    ]},
+      {
+        "id": "2",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "3",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "4",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "5",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "6",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "7",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "8",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "9",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "10",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "11",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "12",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "13",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "14",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "15",
+        "status": "active",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "16",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "17",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "18",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "19",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      },
+      {
+        "id": "20",
+        "status": "disabled",
+        "name": "Click Baza",
+        "startDate": "14.01.2025",
+        "balance": "$55 791,38",
+        "offers": 8,
+        "manager": "Sergei"
+      }
+    ]
+  }
