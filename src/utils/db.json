@@ -87,15 +87,93 @@
           "status": "disabled"
         }
     ]},
+    {
+      "id": "2",
+      "status": "active",
+      "name": "Test",
+      "startDate": "14.01.2025",
+      "balance": "$55 791,38",
+      "manager": "Sergei",
+      "offers": [
       {
-        "id": "2",
-        "status": "active",
-        "name": "Click Baza",
-        "startDate": "14.01.2025",
-        "balance": "$55 791,38",
-        "offers": 8,
-        "manager": "Sergei"
+        "order":
+          {
+            "title": "test",
+            "id": "34574536"
+          },
+        "sources": "6",
+        "spend": "$234 456.78",
+        "profit": "$24 143.78",
+        "status": "active"
       },
+      {
+        "order":
+          {
+            "title": "Primary Text",
+            "id": "34574536"
+          },
+        "id": "34574536",
+        "sources": "3",
+        "spend": "$234 456.78",
+        "profit": "$24 143.78",
+        "status": "active"
+      },
+      {
+        "order":
+          {
+            "title": "Primary Text",
+            "id": "34574536"
+          },
+        "id": "34574536",
+        "sources": "1",
+        "spend": "$234 456.78",
+        "profit": "$24 143.78",
+        "status": "active"
+      },
+      {
+        "order":
+          {
+            "title": "Primary Text",
+            "id": "34574536"
+          },
+        "id": "34574536",
+        "sources": "2",
+        "spend": "$234 456.78",
+        "profit": "$24 143.78",
+        "status": "disabled"
+      }
+    ],
+    "payment_terms": [
+      {
+        "payment_method": {
+          "title": "AdSkill LTD | Hong Kong",
+          "id": "34574536"
+        },
+        "exchange_extras": "0.00%",
+        "vat": "20%",
+        "start_date": "14.03.2025",
+        "status": "active"
+      },
+      {
+        "payment_method": {
+          "title": "AdSkill LTD | Hong Kong",
+          "id": "34574536"
+        },
+        "exchange_extras": "0.00%",
+        "vat": "20%",
+        "start_date": "14.03.2025",
+        "status": "disabled "
+      },{
+        "payment_method": {
+          "title": "AdSkill LTD | Hong Kong",
+          "id": "34574536"
+        },
+        "exchange_extras": "0.00%",
+        "vat": "20%",
+        "start_date": "14.03.2025",
+        "status": "disabled"
+      }
+  ]},
       {
         "id": "3",
         "status": "disabled",

@@ -7,11 +7,11 @@ import { VariableSizeList as List, VariableSizeList } from "react-window";
 import styles from "./table.module.scss";
 import TableRow from "../table-row/table-row";
 import { TClient } from "../../types/types";
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import Panel from "../panel/panel";
 import { useClientById } from "../../hooks/hooks";
 
-type TableProps = {
+interface TableProps {
   table: ReactTableInstance<TClient>;
   isDisabled: boolean;
 };

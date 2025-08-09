@@ -6,18 +6,21 @@ import styles from './data-panel.module.scss';
 function DataPanel({ title, buttonTitle, table, columnFilters, setColumnFilters, active }: any) {
 
     const [open, setOpen] = useState<boolean>(false);
-    const findRowByTitle = columnFilters.find(f => f.id === (active === "offers" ? "orderTitle" : "termsTitle"))?.value || "";
-  
+    const findRowByTitle = columnFilters.find(
+      (f: { id: string; value: string }) =>
+        f.id === (active === "offers" ? "orderTitle" : "termsTitle")
+    )?.value || "";
+    
     const onFilterChange = (id: string, value: string) => {
-      setColumnFilters(prev => {
-        const filtered = prev.filter(f => f.id !== id);
+      setColumnFilters((prev: { id: string; value: string }[]) => {
+        const filtered = prev.filter((f: { id: string; value: string }) => f.id !== id);
         if (value) {
           return [...filtered, { id, value }];
         }
         return filtered;
       });
     };
-
+    
     const onClose = (value: string) => {
         setOpen(false);
         onFilterChange("status", value)
