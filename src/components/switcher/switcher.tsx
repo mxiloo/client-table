@@ -2,8 +2,7 @@ import styles from './switcher.module.scss'
 import { ReactComponent as ArrowIcon } from '../../images/arrow.svg';
 import { ReactComponent as HomeIcon } from '../../images/home.svg';
 import classNames from 'classnames';
-import { useState } from 'react';
-import { TSwitch } from '../../types/types';
+
 
 type TSwitcher = {
     status: string,

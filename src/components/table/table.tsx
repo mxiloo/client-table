@@ -77,7 +77,7 @@ function Table({ table, isDisabled = false }: TableProps) {
           if (index % 2 === 0) {
             return (
               <div style={style} key={`row-${row.id}`}>
-                <TableRow isDisabled = {isDisabled} row={row} onClick={() => {
+                <TableRow isDisabled={isDisabled} row={row} onClick={() => {
                   if (!isDisabled)
                   toggleRow(rowIndex, row?.original?.id)
                 }} />
